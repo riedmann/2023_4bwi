@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              menu: "#D9D9D9",
+              logored: "#D53131",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="flex justify-between bg-menu p-8">
+        <div class="flex gap-4">
+          <div>
+            <span class="font-extrabold text-4xl">Bundes</span
+            ><span class="text-4xl font-thin text-logored">liga</span>
+          </div>
+          <img src="./images/logo.jpg" />
+        </div>
+        <div>
+          <ul>
+            <li class="inline hover:text-logored hover:cursor-pointer">
+              Letzer Spieltag
+            </li>
+            <li class="inline hover:text-logored hover:cursor-pointer">
+              Teams
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="p-8">
+        <h1>Tabelle</h1>
+        <div id="table">
+          <div class="flex gap-4 p-2 border w-fit mt-2 rounded-xl">
+            <div>1.</div>
+            <div>Logo</div>
+            <div>FC Bayern</div>
+            <div>16</div>
+          </div>
+          <div class="flex gap-4 p-4 border w-fit mt-2 rounded-xl">
+            <div>1.</div>
+            <div>Logo</div>
+            <div>FC Bayern</div>
+            <div>16</div>
+          </div>
+          <div class="flex gap-4 p-4 border w-fit mt-2 rounded-xl">
+            <div>1.</div>
+            <div>Logo</div>
+            <div>FC Bayern</div>
+            <div>16</div>
+          </div>
+          <div class="flex gap-4 p-4 border w-fit mt-2 rounded-xl">
+            <div>1.</div>
+            <div>Logo</div>
+            <div>FC Bayern</div>
+            <div>16</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

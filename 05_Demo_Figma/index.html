@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: "#1B1B1B",
+              grey1: "#393939",
+              grey2: "#262626",
+              rowheader: "#D9D9D9",
+              rowdetail: "#6E6C6C",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="">
+      <div
+        class="flex w-full justify-between bg-background text-white items-between"
+      >
+        <div class="flex items-center gap-4 ">
+          <div class="flex gap-4 p-4">
+            <div class="">
+                <img src="./logo.png" />
+              </div>
+              <div class="">
+                <div class="font-bold">Bundesliga</div>
+                <div class="font-extralight">Österreich</div>
+              </div>
+            </div>
+          </div>
+        <div>
+          <div class="h-1/2 w-96 bg-grey1 flex justify-center items-center">
+            Table
+          </div>
+          <div class="h-1/2 w-96 bg-grey2 flex justify-center items-center">
+            Goalgetter
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-grey1 text-white">
+      <div class="bg-rowheader grid grid-cols-3 pl-4 pr-4 pt-2 pb-2">
+        <div class="grid grid-cols-3">
+          <div>Position</div>
+          <div  class="colspan-2">Team</div>
+        </div>
+
+        <div class="grid grid-cols-7">
+          <div>W</div>
+          <div>D</div>
+          <div>L</div>
+          <div>U</div>
+          <div>X</div>
+          <div>U</div>
+          <div>X</div>
+        </div>
+        <div>PTS</div>
+      </div>
+      <div id="container">
+
+      </div>
+
+    </div>
+  </body>
+</html>
